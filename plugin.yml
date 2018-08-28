@@ -1,6 +1,6 @@
 name: OreDropManager
 main: me.nickmoors.OreDropManager.OreDropManager
-version: 0.9
+version: 1.0
 author: MrGraycat
 api-version: 1.13
 commands:
