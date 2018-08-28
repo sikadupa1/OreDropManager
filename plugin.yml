@@ -1,0 +1,20 @@
+name: OreDropManager
+main: me.nickmoors.OreDropManager.OreDropManager
+version: 0.9
+author: MrGraycat
+api-version: 1.13
+commands:
+  drop:
+    description: Shows all available commands.
+    usage: /drop <subtype>
+  drop config:
+    description: Opens GUI to edit drop config.
+  drop reload:
+    description: Reload drop config.
+permissions:
+  drop.reload:
+    description: Gives access to '/drop reload' command.
+  drop.config:
+    description: Gives access to '/drop config' command.
+  drop.update:
+    description: Gives access to see Update notifications if enabled.

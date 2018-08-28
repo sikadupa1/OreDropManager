@@ -1,0 +1,81 @@
+#Config file for LimitedOreDrop.
+prefix: "&f[&cOreDropManager&f]"
+
+#When enabled you will get update notifications when joining the game.
+Update:
+  Enabled: true
+
+#When enabled the FortuneAmount option will be used for a looting pickaxe. 
+#When disabled the default minecraft fortune drops will be used.
+FortuneControl: 
+  Enabled: false
+  
+#When enabled mining without fortune and the drop amount is higher than one it will use a random number between 1 and the given value.
+RandomNormalAmount:
+  Enabled: false
+
+#When enabled drops won't drop but will be put in the player's inventory, usefull if server has clearlag or just to prevent lag in general.
+PutDropInInventory:
+  Enabled: false
+
+#When enabled the default minecraft XP drop will be overwrited with the configured one.
+#RandomNormalXP: the normal XP will be a random amount between 0 and the given value.
+#RandomFortuneXP: the Fortune XP will be a random amount between 0 and the given value.
+XP:
+  Enabled: false
+  RandomNormalXP: true
+  RandomFortuneXP: true
+
+#Enable or disable control for the given ore.
+#DropAmount: Amount to drop with a normal pickaxe.
+#FortuneDrop: The max amount that can drop with a fortune pickaxe.
+Coal:
+  Enabled: true
+  NormalAmount: 1
+  NormalXP: 2
+  FortuneAmount: 2
+  FortuneXP: 2
+Iron:
+  Enabled: true
+  NormalAmount: 1
+  NormalXP: 0
+  FortuneAmount: 1
+  FortuneXP: 0
+Gold:
+  Enabled: true
+  NormalAmount: 1
+  NormalXP: 0
+  FortuneAmount: 1
+  FortuneXP: 0
+Redstone:
+  Enabled: true
+  NormalAmount: 1
+  NormalXP: 5
+  FortuneAmount: 2
+  FortuneXP: 5
+Diamond:
+  Enabled: true
+  NormalAmount: 1
+  NormalXP: 7
+  FortuneAmount: 2
+  FortuneXP: 7
+Emerald:
+  Enabled: true
+  NormalAmount: 1
+  NormalXP: 7
+  FortuneAmount: 2
+  FortuneXP: 7
+Lapis:
+  Enabled: true
+  NormalAmount: 1
+  NormalXP: 5
+  FortuneAmount: 2
+  FortuneXP: 5
+Quartz:
+  Enabled: true
+  NormalAmount: 1
+  NormalXP: 5
+  FortuneAmount: 2
+  FortuneXP: 5
+    
+
