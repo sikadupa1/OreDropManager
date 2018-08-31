@@ -17,7 +17,7 @@ import me.nickmoors.OreDropManager.Handlers.DropHandler;
 
 public class OreBreakEvent implements Listener {
 	
-	@EventHandler (priority = EventPriority.HIGH)
+	@EventHandler (priority = EventPriority.HIGHEST)
 	public void onPlayerBreakBlock(BlockBreakEvent event) {
 		
 		Block block = event.getBlock();
@@ -40,7 +40,7 @@ public class OreBreakEvent implements Listener {
 										int amount = drop.getAmount() - rest.get(0).getAmount();
 										event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.COAL, amount)});
 										event.getPlayer().updateInventory();
-										event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");							
+										event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");							
 									} else {
 										if (Reference.XPStatus == true) {
 											event.setExpToDrop(0);
@@ -60,7 +60,7 @@ public class OreBreakEvent implements Listener {
 										amount = item.getAmount() - rest.get(0).getAmount();
 										event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.COAL, amount)});
 										event.getPlayer().updateInventory();
-										event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+										event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 									} else {
 										if (Reference.XPStatus == true) {
 											event.setExpToDrop(0);
@@ -88,7 +88,7 @@ public class OreBreakEvent implements Listener {
 								rest = event.getPlayer().getInventory().addItem(item);
 								if (!rest.isEmpty()) {
 									event.setCancelled(true);
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 								}
 							} else {
 								event.setDropItems(true);
@@ -103,7 +103,7 @@ public class OreBreakEvent implements Listener {
 									int amount = drop.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.COAL, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -140,7 +140,7 @@ public class OreBreakEvent implements Listener {
 									int amount = drop.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.IRON_ORE, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");							
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");							
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -158,7 +158,7 @@ public class OreBreakEvent implements Listener {
 									amount = item.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.IRON_ORE, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -186,7 +186,7 @@ public class OreBreakEvent implements Listener {
 							rest = event.getPlayer().getInventory().addItem(item);
 							if (!rest.isEmpty()) {
 								event.setCancelled(true);
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							}
 						} else {
 							event.setDropItems(true);
@@ -201,7 +201,7 @@ public class OreBreakEvent implements Listener {
 								int amount = drop.getAmount() - rest.get(0).getAmount();
 								event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.IRON_ORE, amount)});
 								event.getPlayer().updateInventory();
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							} else {
 								if (Reference.XPStatus == true) {
 									event.setExpToDrop(0);
@@ -238,7 +238,7 @@ public class OreBreakEvent implements Listener {
 									int amount = drop.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.GOLD_ORE, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");							
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");							
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -256,7 +256,7 @@ public class OreBreakEvent implements Listener {
 									amount = item.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.GOLD_ORE, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -284,7 +284,7 @@ public class OreBreakEvent implements Listener {
 							rest = event.getPlayer().getInventory().addItem(item);
 							if (!rest.isEmpty()) {
 								event.setCancelled(true);
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							}
 						} else {
 							event.setDropItems(true);
@@ -299,7 +299,7 @@ public class OreBreakEvent implements Listener {
 								int amount = drop.getAmount() - rest.get(0).getAmount();
 								event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.GOLD_ORE, amount)});
 								event.getPlayer().updateInventory();
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							} else {
 								if (Reference.XPStatus == true) {
 									event.setExpToDrop(0);
@@ -337,7 +337,7 @@ public class OreBreakEvent implements Listener {
 									int amount = drop.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.REDSTONE, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");							
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");							
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -356,7 +356,7 @@ public class OreBreakEvent implements Listener {
 									amount = item.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.REDSTONE, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -384,7 +384,7 @@ public class OreBreakEvent implements Listener {
 							rest = event.getPlayer().getInventory().addItem(item);
 							if (!rest.isEmpty()) {
 								event.setCancelled(true);
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							}
 						} else {
 							event.setDropItems(true);
@@ -399,7 +399,7 @@ public class OreBreakEvent implements Listener {
 								int amount = drop.getAmount() - rest.get(0).getAmount();
 								event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.REDSTONE, amount)});
 								event.getPlayer().updateInventory();
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							} else {
 								if (Reference.XPStatus == true) {
 									event.setExpToDrop(0);
@@ -436,7 +436,7 @@ public class OreBreakEvent implements Listener {
 									int amount = drop.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.DIAMOND, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");							
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");							
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -455,7 +455,7 @@ public class OreBreakEvent implements Listener {
 									amount = item.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.DIAMOND, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 									} else {
 										if (Reference.XPStatus == true) {
 											event.setExpToDrop(0);
@@ -483,7 +483,7 @@ public class OreBreakEvent implements Listener {
 							rest = event.getPlayer().getInventory().addItem(item);
 							if (!rest.isEmpty()) {
 								event.setCancelled(true);
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							}
 						} else {
 							event.setDropItems(true);
@@ -498,7 +498,7 @@ public class OreBreakEvent implements Listener {
 								int amount = drop.getAmount() - rest.get(0).getAmount();
 								event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.DIAMOND, amount)});
 								event.getPlayer().updateInventory();
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							} else {
 								if (Reference.XPStatus == true) {
 									event.setExpToDrop(0);
@@ -535,7 +535,7 @@ public class OreBreakEvent implements Listener {
 									int amount = drop.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.EMERALD, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");							
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");							
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -554,7 +554,7 @@ public class OreBreakEvent implements Listener {
 										amount = item.getAmount() - rest.get(0).getAmount();
 										event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.EMERALD, amount)});
 										event.getPlayer().updateInventory();
-										event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+										event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 									} else {
 										if (Reference.XPStatus == true) {
 											event.setExpToDrop(0);
@@ -582,7 +582,7 @@ public class OreBreakEvent implements Listener {
 							rest = event.getPlayer().getInventory().addItem(item);
 							if (!rest.isEmpty()) {
 								event.setCancelled(true);
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							}
 						} else {
 							event.setDropItems(true);
@@ -597,7 +597,7 @@ public class OreBreakEvent implements Listener {
 								int amount = drop.getAmount() - rest.get(0).getAmount();
 								event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.EMERALD, amount)});
 								event.getPlayer().updateInventory();
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							} else {
 								if (Reference.XPStatus == true) {
 									event.setExpToDrop(0);
@@ -636,7 +636,7 @@ public class OreBreakEvent implements Listener {
 									lapis.setAmount(amount);
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {lapis});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");							
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");							
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -656,7 +656,7 @@ public class OreBreakEvent implements Listener {
 										lapis.setAmount(amount);
 										event.getPlayer().getInventory().removeItem(new ItemStack[] {lapis});
 										event.getPlayer().updateInventory();
-										event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+										event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 									} else {
 										if (Reference.XPStatus == true) {
 											event.setExpToDrop(0);
@@ -684,7 +684,7 @@ public class OreBreakEvent implements Listener {
 							rest = event.getPlayer().getInventory().addItem(item);
 							if (!rest.isEmpty()) {
 								event.setCancelled(true);
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							}
 						} else {
 							event.setDropItems(true);
@@ -701,7 +701,7 @@ public class OreBreakEvent implements Listener {
 								lapis.setAmount(amount);
 								event.getPlayer().getInventory().removeItem(new ItemStack[] {lapis});
 								event.getPlayer().updateInventory();
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							} else {
 								if (Reference.XPStatus == true) {
 									event.setExpToDrop(0);
@@ -738,7 +738,7 @@ public class OreBreakEvent implements Listener {
 									int amount = drop.getAmount() - rest.get(0).getAmount();
 									event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.QUARTZ, amount)});
 									event.getPlayer().updateInventory();
-									event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");							
+									event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");							
 								} else {
 									if (Reference.XPStatus == true) {
 										event.setExpToDrop(0);
@@ -757,7 +757,7 @@ public class OreBreakEvent implements Listener {
 										amount = item.getAmount() - rest.get(0).getAmount();
 										event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.QUARTZ, amount)});
 										event.getPlayer().updateInventory();
-										event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+										event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 									} else {
 										if (Reference.XPStatus == true) {
 											event.setExpToDrop(0);
@@ -785,7 +785,7 @@ public class OreBreakEvent implements Listener {
 							rest = event.getPlayer().getInventory().addItem(item);
 							if (!rest.isEmpty()) {
 								event.setCancelled(true);
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							}
 						} else {
 							event.setDropItems(true);
@@ -800,7 +800,7 @@ public class OreBreakEvent implements Listener {
 								int amount = drop.getAmount() - rest.get(0).getAmount();
 								event.getPlayer().getInventory().removeItem(new ItemStack[] {new ItemStack(Material.QUARTZ, amount)});
 								event.getPlayer().updateInventory();
-								event.getPlayer().sendMessage(Reference.prefix + "§cThere isn't enough space in your inventory! ");
+								event.getPlayer().sendMessage(Reference.prefix + "Â§cThere isn't enough space in your inventory! ");
 							} else {
 								if (Reference.XPStatus == true) {
 									event.setExpToDrop(0);
